@@ -51,6 +51,10 @@ body > div {
     background-color: azure;
 }
 
+.file-upload {
+    margin-bottom: 1%;
+}
+
 .topic-label {
     font-weight: bold;
 }
