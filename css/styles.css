@@ -54,3 +54,40 @@ body > div {
 .topic-label {
     font-weight: bold;
 }
+
+.left-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info-input {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: none;
+    vertical-align: middle;
+    width: 100%;
+    max-width: calc(100% - 2rem);
+}
+
+.textarea-1line {
+    height: 1rem;
+}
+
+.textarea-5line {
+    height: 5rem;
+}
+
+.area-small {
+    width: 25%;
+}
+
+.area-medium {
+    width: 50%;
+}
+
+.area-large {
+    width: 100%;
+}
