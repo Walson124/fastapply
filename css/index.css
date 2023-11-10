@@ -1,0 +1,56 @@
+html, body {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.header-upper {
+    font-size: 200%;
+    padding: 1%;
+    background-color: gray;
+}
+
+.header-lower {
+    padding: 1%;
+    font-size: 125%;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-lower > div {
+    flex-grow: 1;
+}
+
+.header-lower > div > a:link,
+.header-lower > div > a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.header-lower > div > a:hover,
+.header-lower > div > a:active {
+    text-decoration: none;
+    color: red;
+}
+
+body > div {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    background-color: azure;
+}
+
+.topic-label {
+    font-weight: bold;
+}
