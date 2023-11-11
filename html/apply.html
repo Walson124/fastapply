@@ -21,11 +21,11 @@
             <p class="topic-label">Upload files (if you have previously used website)</p>
             <form class="file-upload">
                 <input type="file">
-                <input type="submit" value="Upload Autofill">
+                <input type="button" value="Upload Autofill">
             </form>
             <form class="file-upload">
                 <input type="file">
-                <input type="submit" value="Upload Application History">
+                <input type="button" value="Upload Application History">
             </form>
         </div>
         <div>
@@ -35,48 +35,48 @@
                 <div class="left-right">
                     <div class="area-small info-input">
                         <label for="first-name">First Name</label>
-                        <textarea class="textarea-1line" name="first-name"></textarea>
+                        <textarea class="textarea-1line" id="first-name" autocomplete="off"></textarea>
                     </div>
                     <div class="area-small info-input">
                         <label for="middle-name">Middle Name</label>
-                        <textarea class="textarea-1line" name="middle-name"></textarea>
+                        <textarea class="textarea-1line" id="middle-name"></textarea>
                     </div>
                     <div class="area-small info-input">
                         <label for="last-name">Last Name</label>
-                        <textarea class="textarea-1line" name="last-name"></textarea>
+                        <textarea class="textarea-1line" id="last-name"></textarea>
                     </div>
                 </div>
                 <div class="area-medium info-input">
                     <label for="email-address">Email Address</label>
-                    <textarea class="textarea-1line" name="email-address"></textarea>
+                    <textarea class="textarea-1line" id="email-address"></textarea>
                 </div>
                 <div class="area-medium info-input">
                     <label for="primary-number">Primary Number</label>
-                    <textarea class="textarea-1line" name="primary-number"></textarea>
+                    <textarea class="textarea-1line" id="primary-number"></textarea>
                 </div>
                 <div class="area-large info-input">
                     <label for="address-line-1">Address Line 1</label>
-                    <textarea class="textarea-1line" name="address-line-1"></textarea>
+                    <textarea class="textarea-1line" id="address-line-1"></textarea>
                 </div>
                 <div class="area-large info-input">
                     <label for="address-line-2">Address Line 2</label>
-                    <textarea class="textarea-1line" name="address-line-2"></textarea>
+                    <textarea class="textarea-1line" id="address-line-2"></textarea>
                 </div>
                 <div class="area-medium info-input">
                     <label for="country">Country</label>
-                    <textarea class="textarea-1line" name="country">United States</textarea>
+                    <textarea class="textarea-1line" id="country" autocomplete="off">United States</textarea>
                 </div>
                 <div class="area-medium info-input">
                     <label for="state">State</label>
-                    <textarea class="textarea-1line" name="state"></textarea>
+                    <textarea class="textarea-1line" id="state"></textarea>
                 </div>
                 <div class="area-medium info-input">
                     <label for="city">City</label>
-                    <textarea class="textarea-1line" name="city"></textarea>
+                    <textarea class="textarea-1line" id="city"></textarea>
                 </div>
                 <div class="area-medium info-input">
                     <label for="zip-code">Zip Code</label>
-                    <textarea class="textarea-1line" name="zip-code"></textarea>
+                    <textarea class="textarea-1line" id="zip-code"></textarea>
                 </div>
             </div>
             <div>
@@ -86,8 +86,9 @@
         <div>
             <p class="topic-label" style="color: red">Make sure everything you have is correct</p>
             <form>
-                <input type="submit" value="Fast Apply" style="color:red; border-color: red;">
+                <input type="button" onclick="apply()" onsubmit="return false" value="Fast Apply" style="color:red; border-color: red;">
             </form>
         </div>
     </body>
+    <script src="../js/apply.js"></script>
 </html>
